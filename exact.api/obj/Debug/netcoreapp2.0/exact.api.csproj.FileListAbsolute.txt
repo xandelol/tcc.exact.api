@@ -1,0 +1,11 @@
+C:\Users\guilherme\RiderProjects\exact.api\exact.api\bin\Debug\netcoreapp2.0\exact.api.deps.json
+C:\Users\guilherme\RiderProjects\exact.api\exact.api\bin\Debug\netcoreapp2.0\exact.api.runtimeconfig.json
+C:\Users\guilherme\RiderProjects\exact.api\exact.api\bin\Debug\netcoreapp2.0\exact.api.runtimeconfig.dev.json
+C:\Users\guilherme\RiderProjects\exact.api\exact.api\bin\Debug\netcoreapp2.0\exact.api.dll
+C:\Users\guilherme\RiderProjects\exact.api\exact.api\bin\Debug\netcoreapp2.0\exact.api.pdb
+C:\Users\guilherme\RiderProjects\exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.csproj.CoreCompileInputs.cache
+C:\Users\guilherme\RiderProjects\exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.AssemblyInfoInputs.cache
+C:\Users\guilherme\RiderProjects\exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.AssemblyInfo.cs
+C:\Users\guilherme\RiderProjects\exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.dll
+C:\Users\guilherme\RiderProjects\exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.pdb
+C:\Users\guilherme\RiderProjects\exact.api\exact.api\bin\Debug\netcoreapp2.0\exact.api.xml

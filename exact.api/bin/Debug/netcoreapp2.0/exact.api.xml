@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>exact.api</name>
+    </assembly>
+    <members>
+        <member name="M:exact.api.Controllers.AuthController.Login(exact.api.Model.Payload.AuthPayload)">
+            <summary>
+            Login into system and return a jwt token
+            </summary>
+            <param name="user">User to be logged in</param>
+            <returns><see cref="T:exact.api.Model.Proxy.JwtTokenProxy" /> information</returns>
+        </member>
+        <member name="M:exact.api.Controllers.BaseController.RunDefaultAsync(System.Func{System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}})">
+            <summary>
+                Run <paramref name="predicate" /> under default statement.
+            </summary>
+            <param name="predicate">Function to be ran.</param>
+            <returns><paramref name="predicate" /> return or default return in case of an error has been thrown.</returns>
+        </member>
+        <member name="M:exact.api.Controllers.BaseController.RunDefault(System.Func{Microsoft.AspNetCore.Mvc.IActionResult})">
+            <summary>
+                Run <paramref name="predicate" /> under default statement.
+            </summary>
+            <param name="predicate">Function to be ran.</param>
+            <returns><paramref name="predicate" /> return or default return in case of an error has been thrown.</returns>
+        </member>
+        <member name="P:exact.api.Data.Model.SettingEntity.ClientUses">
+            <summary>
+            Indicates that if the configuration will go down to the applications,
+            which per hour in LavaSim will not be used :)
+            </summary>
+        </member>
+        <member name="P:exact.api.Data.Model.UserEntity.Identifier">
+            <summary>
+            Teacher CPF or student RA
+            </summary>
+        </member>
+        <member name="T:exact.api.Exception.InvalidArgumentException">
+            <summary>
+            When a invaid argument is sent.
+            Param is no null but it is still not valid
+            </summary>
+        </member>
+        <member name="M:exact.api.Exception.InvalidArgumentException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="param">Invalid param's name</param>
+        </member>
+        <member name="M:exact.api.Exception.InvalidArgumentException.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="param">Invalid param's name</param>
+            <param name="message">Error message</param>
+        </member>
+        <member name="T:exact.api.Exception.TokenInvalidException">
+            <summary>
+            When token was expired
+            When has been changed token (of it was logged in another device)
+            </summary>
+        </member>
+        <member name="M:lavasim.business.Business.UserBusiness.GetJwtSecurityToken(System.String,System.String,exact.api.Data.Enum.UserType)">
+            <summary>
+                Get a token to the given user
+            </summary>
+            <param name="username">Username</param>
+            <param name="password">Password</param>
+            <param name="type">Client type</param>
+            <returns></returns>
+        </member>
+        <member name="T:lavasim.api.Controllers.SettingController">
+            <summary>
+                Controller for settings endpoints.
+            </summary>
+        </member>
+        <member name="M:lavasim.api.Controllers.SettingController.#ctor(lavasim.business.Business.SettingBusiness)">
+            <summary>
+                Constructor
+            </summary>
+            <param name="businesses"></param>
+        </member>
+        <member name="T:lavasim.api.Controllers.UserController">
+            <summary>
+            User Controller's
+            </summary>
+        </member>
+        <member name="M:lavasim.api.Controllers.UserController.Get(exact.api.Model.UserToken)">
+             <summary>
+             Get user information
+             </summary>
+             <remarks>
+             About "type" property on proxy:
+            
+                 Type
+                 {
+                    App = 0,
+                    Backoffice = 1
+                 }
+            
+             </remarks>
+             <param name="authorization"></param>
+             <returns></returns>
+        </member>
+        <member name="M:lavasim.api.Controllers.UserController.ResetPassword(System.String)">
+            <summary>
+            Send email to password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:lavasim.api.Controllers.UserController.ResetPassword(System.String,System.String,System.String)">
+            <summary>
+            Reset password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:lavasim.api.Controllers.UserController.Reset(System.String,System.String,System.String)">
+            <summary>
+            Change password
+            </summary>
+            <param name="authorization"></param>
+            <param name="oldPassword"></param>
+            <param name="newPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:lavasim.common.Extension.ModelUserAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+                Gets user information
+            </summary>
+            <param name="context">Context</param>
+        </member>
+        <member name="M:lavasim.common.Extension.StringExtensions.CalculateMd5Hash(System.String)">
+            <summary>
+            Calculate Md5 hash from a string
+            </summary>
+            <param name="input">Object that will be used to calculated Md5 hash</param>
+            <returns>Md5 hash</returns>
+        </member>
+    </members>
+</doc>

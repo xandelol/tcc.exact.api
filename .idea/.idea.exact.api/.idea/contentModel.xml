@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\guilherme\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_exact.api.1884147731.00" t="ExcludeRecursive" />
+    <e p="C:\Users\guilherme\RiderProjects\exact.api" t="IncludeFlat">
+      <e p="exact.api" t="IncludeRecursive">
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Business" t="Include">
+          <e p="BaseBusiness.cs" t="Include" />
+          <e p="GroupActionBusiness.cs" t="Include" />
+          <e p="SettingBusiness.cs" t="Include" />
+          <e p="UserBusiness.cs" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="AuthController.cs" t="Include" />
+          <e p="BaseController.cs" t="Include" />
+          <e p="SettingController.cs" t="Include" />
+          <e p="UserController.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="Enum" t="Include">
+            <e p="SettingType.cs" t="Include" />
+            <e p="UserType.cs" t="Include" />
+          </e>
+          <e p="ExactContext.cs" t="Include" />
+          <e p="Model" t="Include">
+            <e p="ActionEntity.cs" t="Include" />
+            <e p="BaseEntity.cs" t="Include" />
+            <e p="GroupActionEntity.cs" t="Include" />
+            <e p="GroupEntity.cs" t="Include" />
+            <e p="QuestionEntity.cs" t="Include" />
+            <e p="SettingEntity.cs" t="Include" />
+            <e p="UserEntity.cs" t="Include" />
+          </e>
+        </e>
+        <e p="exact.api.csproj" t="IncludeRecursive" />
+        <e p="Exception" t="Include">
+          <e p="InvalidArgumentException.cs" t="Include" />
+          <e p="TokenInvalidException.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20180609193600_InitialMigration.cs" t="Include" />
+          <e p="20180609193600_InitialMigration.Designer.cs" t="Include" />
+          <e p="20180609200310_0.0.2.cs" t="Include" />
+          <e p="20180609200310_0.0.2.Designer.cs" t="Include" />
+          <e p="20180609200500_0.0.3.cs" t="Include" />
+          <e p="20180609200500_0.0.3.Designer.cs" t="Include" />
+          <e p="ExactContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="migrations.txt" t="Include" />
+        <e p="Model" t="Include">
+          <e p="GenericAtribute.cs" t="Include" />
+          <e p="Payload" t="Include">
+            <e p="AuthPayload.cs" t="Include" />
+            <e p="DataTablePayload.cs" t="Include" />
+          </e>
+          <e p="Proxy" t="Include">
+            <e p="ActionProxy.cs" t="Include" />
+            <e p="DataTableProxy.cs" t="Include" />
+            <e p="ErrorProxy.cs" t="Include" />
+            <e p="JwtTokenProxy.cs" t="Include" />
+            <e p="SettingProxy.cs" t="Include" />
+            <e p="UserInfoProxy.cs" t="Include" />
+            <e p="UserProxy.cs" t="Include" />
+          </e>
+          <e p="UserToken.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.0" t="Include">
+              <e p="exact.api.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Repository" t="Include">
+          <e p="BaseRepository.cs" t="Include" />
+          <e p="GroupActionRepository.cs" t="Include" />
+          <e p="GroupRepository.cs" t="Include" />
+          <e p="IDataRepository.cs" t="Include" />
+          <e p="QuestionRespository.cs" t="Include" />
+          <e p="SettingRepository.cs" t="Include" />
+          <e p="UserRepository.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="Storage" t="Include">
+          <e p="IStorageRepository.cs" t="Include" />
+          <e p="StorageRepository.cs" t="Include" />
+        </e>
+        <e p="Utils" t="Include">
+          <e p="DateTimeExtension.cs" t="Include" />
+          <e p="ModelUserAttribute.cs" t="Include" />
+          <e p="StringExtensions.cs" t="Include" />
+        </e>
+      </e>
+      <e p="exact.api.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

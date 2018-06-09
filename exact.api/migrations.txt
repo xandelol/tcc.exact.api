@@ -1,0 +1,5 @@
+Aplicando o MIgration:
+
+1- ROdar comando na pasta do projeto: dotnet ef migrations "nome_do_migration_sem_aspas"
+
+2 - ROdar comando na pasta do projeto: dotnet ef database update.
