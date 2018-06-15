@@ -25,6 +25,11 @@
             <param name="predicate">Function to be ran.</param>
             <returns><paramref name="predicate" /> return or default return in case of an error has been thrown.</returns>
         </member>
+        <member name="P:exact.api.Data.Model.QuestionEntity.Statement">
+            <summary>
+                The question statement
+            </summary>
+        </member>
         <member name="P:exact.api.Data.Model.SettingEntity.ClientUses">
             <summary>
             Indicates that if the configuration will go down to the applications,
@@ -68,6 +73,30 @@
             <param name="username">Username</param>
             <param name="password">Password</param>
             <param name="type">Client type</param>
+            <returns></returns>
+        </member>
+        <member name="T:lavasim.api.Controllers.QuestionController">
+            <summary>
+                Controller for questions endpoints.
+            </summary>
+        </member>
+        <member name="M:lavasim.api.Controllers.QuestionController.#ctor(lavasim.business.Business.QuestionBusiness)">
+            <summary>
+                Constructor
+            </summary>
+            <param name="businesses"></param>
+        </member>
+        <member name="M:lavasim.api.Controllers.QuestionController.Create(exact.api.Model.Payload.QuestionPayload)">
+            <summary>
+                Gets a number of random questions that the user has not seen before.
+                If the user sees then all, the seen record is reset and all questions can
+                be selected again.
+            </summary>
+            <response code="200">Random questions.</response>
+            <response code="500">
+                We messed up somenthing and we aren't sure what, no system is perfect, check message for more
+                information.
+            </response>
             <returns></returns>
         </member>
         <member name="T:lavasim.api.Controllers.SettingController">

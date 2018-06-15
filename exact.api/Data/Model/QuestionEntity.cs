@@ -1,7 +1,12 @@
 ﻿namespace exact.api.Data.Model
 {
-    public class QuestionEntity : BaseEntity
-    {
-        public string Title { get; set; }
+    public class QuestionEntity : BaseEntity    {
+
+            /// <summary>
+            ///     The question statement
+            /// </summary>
+            public string Statement { get; set; }
+          
+     
     }
 }

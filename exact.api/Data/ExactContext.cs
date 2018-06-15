@@ -28,6 +28,6 @@ namespace exact.api.Data
         public DbSet<GroupEntity> Groups { get; set; }
         public DbSet<SettingEntity> Settings { get; set; }
         public DbSet<UserEntity> Users { get; set; }
-//        public DbSet<QuestionEntity> Questions { get; set; }
+        public DbSet<QuestionEntity> Questions { get; set; }
     }
 }

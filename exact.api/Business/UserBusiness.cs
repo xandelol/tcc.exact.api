@@ -9,6 +9,7 @@ using exact.api.Business;
 using exact.api.Data.Enum;
 using exact.api.Data.Model;
 using exact.api.Exception;
+using exact.api.Model.Payload;
 using exact.api.Model.Proxy;
 using exact.api.Repository;
 using exact.api.Storage;
@@ -26,7 +27,7 @@ namespace lavasim.business.Business
         private readonly IStorageRepository _storeRepository;
         private readonly IConfiguration _configuration;
         private readonly GroupActionBusiness _groupActionBusiness;
-        private readonly QuestionRespository _questionRespository;
+        private readonly QuestionRepository _questionRespository;
 
         public UserBusiness(UserRepository repository,
             UserRepository userRepository, 
@@ -35,7 +36,7 @@ namespace lavasim.business.Business
             IConfiguration configuration, 
             GroupRepository groupRepository,
             GroupActionBusiness groupActionBusiness, 
-            QuestionRespository questionRespository)
+            QuestionRepository questionRespository)
             : base(repository, userRepository)
         {
             _repository = repository;
@@ -45,6 +46,10 @@ namespace lavasim.business.Business
             _groupRepository = groupRepository;
             _groupActionBusiness = groupActionBusiness;
             _questionRespository = questionRespository;
+        }
+
+        public async Task<JwtTokenProxy> CreateUser(CreateUserPayload payload) {
+            return null;
         }
 
         public async Task<UserInfoProxy> GetUserInfo(Guid id)

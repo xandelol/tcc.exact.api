@@ -3,6 +3,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Threading.Tasks;
 using exact.api.Controllers;
 using exact.api.Model;
+using exact.api.Model.Payload;
 using exact.api.Model.Proxy;
 using lavasim.business.Business;
 using lavasim.common.Extension;
@@ -46,6 +47,12 @@ namespace lavasim.api.Controllers
         /// </remarks>
         /// <param name="authorization"></param>
         /// <returns></returns>
+
+        //public Task<IActionResult> Create([FromBody] CreateUserPayload payload)
+        //{
+        //    return RunDefaultAsync(async () => Ok(await _business.CreateUser(payload)));
+        //}
+
         [HttpGet("me")]
         [SwaggerResponse(200, Type = typeof(UserInfoProxy), Description = "Get user information")]
         public Task<IActionResult> Get(UserToken user)

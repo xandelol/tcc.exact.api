@@ -105,11 +105,12 @@ namespace exact.api
             services.AddScoped<SettingRepository>();
             services.AddScoped<GroupRepository>();
             services.AddScoped<GroupActionRepository>();
-            services.AddScoped<QuestionRespository>();
+            services.AddScoped<QuestionRepository>();
 
             services.AddScoped<UserBusiness>();
             services.AddScoped<SettingBusiness>();
             services.AddScoped<GroupActionBusiness>();
+            services.AddScoped<QuestionBusiness>();
 
             services.AddSingleton<IStorageRepository>(
                 new StorageRepository(

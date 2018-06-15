@@ -13,9 +13,10 @@ using System;
 namespace exact.api.Migrations
 {
     [DbContext(typeof(ExactContext))]
-    partial class ExactContextModelSnapshot : ModelSnapshot
+    [Migration("20180615225736_0.0.4")]
+    partial class _004
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
