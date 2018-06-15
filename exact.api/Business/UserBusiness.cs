@@ -12,7 +12,9 @@ using exact.api.Exception;
 using exact.api.Model.Proxy;
 using exact.api.Repository;
 using exact.api.Storage;
+using exact.api.Extensions;
 using lavasim.common.Extension;
+using lavasim.common.Model.Proxy;
 using Microsoft.IdentityModel.Tokens;
 using IConfiguration = Microsoft.Extensions.Configuration.IConfiguration;
 
@@ -45,6 +47,18 @@ namespace lavasim.business.Business
             _groupRepository = groupRepository;
             _groupActionBusiness = groupActionBusiness;
             _questionRespository = questionRespository;
+        }
+
+        public async Task<JwtTokenProxy> Create(UserProxy user) {
+            if (user.Name == null)
+                throw new ArgumentNullException(nameof(user));
+            if (user.Password == null)
+                throw new ArgumentNullException(nameof(user));
+            if (!Validadors.IsValidEmail(user.Email))
+                throw new InvalidArgumentException(nameof(user.Email), "Email invalido!");
+            if (await _userRepo.AnyAsync(x => x.Email == user.Email))
+                throw new InvalidArgumentException(nameof(user.Email), "Email já cadastrado");
+
         }
 
         public async Task<UserInfoProxy> GetUserInfo(Guid id)

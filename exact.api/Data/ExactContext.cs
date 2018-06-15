@@ -11,7 +11,13 @@ namespace exact.api.Data
         {
 
         }
-        
+
+        public DbSet<ActionEntity> Actions { get; set; }
+        public DbSet<GroupActionEntity> GroupActions { get; set; }
+        public DbSet<GroupEntity> Groups { get; set; }
+        public DbSet<SettingEntity> Settings { get; set; }
+        public DbSet<UserEntity> Users { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
@@ -22,12 +28,5 @@ namespace exact.api.Data
             base.OnModelCreating(modelBuilder);
 
         }
-        
-        public DbSet<ActionEntity> Actions { get; set; }
-        public DbSet<GroupActionEntity> GroupActions { get; set; }
-        public DbSet<GroupEntity> Groups { get; set; }
-        public DbSet<SettingEntity> Settings { get; set; }
-        public DbSet<UserEntity> Users { get; set; }
-//        public DbSet<QuestionEntity> Questions { get; set; }
     }
 }

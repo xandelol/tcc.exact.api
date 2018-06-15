@@ -9,3 +9,10 @@ C:\Users\guilherme\RiderProjects\exact.api\exact.api\obj\Debug\netcoreapp2.0\exa
 C:\Users\guilherme\RiderProjects\exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.dll
 C:\Users\guilherme\RiderProjects\exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.pdb
 C:\Users\guilherme\RiderProjects\exact.api\exact.api\bin\Debug\netcoreapp2.0\exact.api.xml
+C:\git_xandao\tcc.exact.api\exact.api\bin\Debug\netcoreapp2.0\exact.api.xml
+C:\git_xandao\tcc.exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.csprojAssemblyReference.cache
+C:\git_xandao\tcc.exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.csproj.CoreCompileInputs.cache
+C:\git_xandao\tcc.exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.AssemblyInfoInputs.cache
+C:\git_xandao\tcc.exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.AssemblyInfo.cs
+C:\git_xandao\tcc.exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.dll
+C:\git_xandao\tcc.exact.api\exact.api\obj\Debug\netcoreapp2.0\exact.api.pdb
