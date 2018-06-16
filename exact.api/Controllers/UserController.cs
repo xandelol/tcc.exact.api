@@ -1,7 +1,9 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Threading.Tasks;
+using AutoMapper;
 using exact.api.Controllers;
+using exact.api.Data.Model;
 using exact.api.Model;
 using exact.api.Model.Payload;
 using exact.api.Model.Proxy;
@@ -19,17 +21,19 @@ namespace lavasim.api.Controllers
     /// User Controller's
     /// </summary>
     [Route("api/user")]
-    [Authorize(Roles = "user, company, admin")]
+    [AllowAnonymous]
     [ModelUser]
     [ProducesResponseType(typeof(ErrorProxy), 500)]
     [ProducesResponseType(typeof(ErrorProxy), 400)]
     public class UserController : BaseController
     {
+        private readonly IMapper _map;
         private readonly UserBusiness _business;
 
-        public UserController(UserBusiness business)
+        public UserController(UserBusiness business, IMapper map)
         {
             _business = business;
+            _map = map;
         }
 
         /// <summary>
@@ -124,6 +128,16 @@ namespace lavasim.api.Controllers
                 return Ok();
             });
             
-        }     
+        }
+
+        [ProducesResponseType(typeof(JwtTokenProxy), 200)]
+        [AllowAnonymous]
+        [HttpPost("create")]
+        public Task<IActionResult> CreateUser([FromBody] CreateUserPayload payload) {
+            return RunDefaultAsync(async () =>
+                {
+                    return Ok(await _business.CreateUser(payload));
+                });
+        }
     }
 }

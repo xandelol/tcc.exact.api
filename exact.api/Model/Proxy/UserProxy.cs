@@ -15,17 +15,13 @@ namespace lavasim.common.Model.Proxy
         public string Password { get; set; }
 
         public string Email { get; set; }
-
-        public string Phone { get; set; }
-
-       public string Identifier { get; set; }
+        
+        public string Identifier { get; set; }
 
         public string ImageUrl { get; set; }
 
         public UserType Type { get; set; }
 
-        public DateTime? LastLogin { get; set; }
-
-        public Guid? GroupId { get; set; }
+        public string Roles { get; set; }
     }
 }

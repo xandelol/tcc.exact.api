@@ -11,9 +11,7 @@ namespace exact.api.Data.Model
         public string Password { get; set; }
         
         public string Email { get; set; }
-        
-        public string Phone { get; set; }
-       
+               
         /// <summary>
         /// Teacher CPF or student RA
         /// </summary>
@@ -23,21 +21,11 @@ namespace exact.api.Data.Model
         
         public UserType Type { get; set; }
 
-        public DateTime? LastLogin { get; set; }
-        
-        public DateTime RegisterDate { get; set; }
-
         //Authenticate
         public string Token { get; set; }
 
         public string Roles { get; set; }
         
         public string ResetPasswordCode { get; set; }
-        
-        //Group
-        public Guid GroupId { get; set; }
-        
-        [ForeignKey("GroupId")]
-        public GroupEntity Group { get; set; }
     }
 }

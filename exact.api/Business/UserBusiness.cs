@@ -50,8 +50,22 @@ namespace lavasim.business.Business
             _questionRespository = questionRespository;
         }
         
-        public async Task<JwtTokenProxy> CreateUser(CreateUserPayload payload) {
-            return null;
+        public async Task<JwtSecurityToken> CreateUser(CreateUserPayload payload) {
+            if (payload.Name == null)
+                throw new ArgumentNullException(nameof(payload));
+
+            var user = new UserEntity()
+            {
+                Name = payload.Name,
+                Password = payload.Password,
+                Email = payload.Email,
+                Identifier = payload.Identifier,
+                Roles = payload.Roles
+            };
+
+            await _repository.AddAndSaveAsync(user);
+            
+            return await GetJwtSecurityToken(user.Email,user.Password,UserType.App);
         }
 
         public async Task<UserInfoProxy> GetUserInfo(Guid id)
@@ -65,10 +79,10 @@ namespace lavasim.business.Business
 
             userProxy.Settings = _settingBusiness.GetClientSettings();
 
-            if (user.Type == UserType.Backoffice)
-            {
-                userProxy.Actions = _groupActionBusiness.GetFromGroupId(user.GroupId);
-            }
+            //if (user.Type == UserType.Backoffice)
+            //{
+            //    userProxy.Actions = _groupActionBusiness.GetFromGroupId(user.GroupId);
+            //}
 
             return userProxy;
         }
@@ -77,7 +91,7 @@ namespace lavasim.business.Business
         {
             var user = GetUserById(id);
 
-            user.LastLogin = DateTime.UtcNow;
+            //user.LastLogin = DateTime.UtcNow;
 
             await _repository.UpdateAndSaveAsync(user);
         }

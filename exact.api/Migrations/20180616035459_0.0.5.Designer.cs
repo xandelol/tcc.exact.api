@@ -13,9 +13,10 @@ using System;
 namespace exact.api.Migrations
 {
     [DbContext(typeof(ExactContext))]
-    partial class ExactContextModelSnapshot : ModelSnapshot
+    [Migration("20180616035459_0.0.5")]
+    partial class _005
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -127,15 +128,21 @@ namespace exact.api.Migrations
 
                     b.Property<string>("Email");
 
+                    b.Property<Guid>("GroupId");
+
                     b.Property<string>("Identifier");
 
                     b.Property<string>("ImageUrl");
 
                     b.Property<bool>("IsActive");
 
+                    b.Property<DateTime?>("LastLogin");
+
                     b.Property<string>("Name");
 
                     b.Property<string>("Password");
+
+                    b.Property<DateTime>("RegisterDate");
 
                     b.Property<string>("ResetPasswordCode");
 
@@ -147,6 +154,8 @@ namespace exact.api.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("GroupId");
+
                     b.ToTable("Users");
                 });
 
@@ -157,6 +166,14 @@ namespace exact.api.Migrations
                         .HasForeignKey("ActionId")
                         .OnDelete(DeleteBehavior.Restrict);
 
+                    b.HasOne("exact.api.Data.GroupEntity", "Group")
+                        .WithMany()
+                        .HasForeignKey("GroupId")
+                        .OnDelete(DeleteBehavior.Restrict);
+                });
+
+            modelBuilder.Entity("exact.api.Data.Model.UserEntity", b =>
+                {
                     b.HasOne("exact.api.Data.GroupEntity", "Group")
                         .WithMany()
                         .HasForeignKey("GroupId")
