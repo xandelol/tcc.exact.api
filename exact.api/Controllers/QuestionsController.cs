@@ -77,5 +77,12 @@ namespace exact.api.Controllers
         {
             return RunDefault(() => Ok(_businesses.Get(payload)));
         }
+
+        [ProducesResponseType(typeof(List<QuestionProxy>),200)]
+        [AllowAnonymous]
+        [HttpGet("game/list")]
+        public IActionResult List() {
+            return RunDefault(() => Ok(_businesses.Get()));
+        }
     }
 }

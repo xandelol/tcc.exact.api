@@ -115,5 +115,14 @@ namespace exact.business.Business
                 Data = data
             };
         }
+
+        public async Task<List<QuestionProxy>> Get() {
+            var list = _questionRepository.GetAll();
+            return list.Select(s => new QuestionProxy() {
+                Id = s.Id,
+                Statement = s.Statement,
+                IsActive = s.IsActive
+            }).ToList();
+        }
     }
 }
