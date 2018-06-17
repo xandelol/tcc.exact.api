@@ -7,15 +7,15 @@ using exact.api.Data.Model;
 using exact.api.Model;
 using exact.api.Model.Payload;
 using exact.api.Model.Proxy;
-using lavasim.business.Business;
-using lavasim.common.Extension;
-using lavasim.common.Model;
-using lavasim.common.Model.Proxy;
+using exact.business.Business;
+using exact.common.Extension;
+using exact.common.Model;
+using exact.common.Model.Proxy;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace lavasim.api.Controllers
+namespace exact.api.Controllers
 {
     /// <summary>
     /// User Controller's
@@ -136,7 +136,11 @@ namespace lavasim.api.Controllers
         public Task<IActionResult> CreateUser([FromBody] CreateUserPayload payload) {
             return RunDefaultAsync(async () =>
                 {
-                    return Ok(await _business.CreateUser(payload));
+                    var token = await _business.CreateUser(payload);
+                    return Ok(new JwtTokenProxy {
+                        Token = $"Bearer {new JwtSecurityTokenHandler().WriteToken(token)}",
+                        Expiration = token.ValidTo
+                    });
                 });
         }
     }

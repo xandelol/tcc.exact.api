@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace lavasim.common.Extension
+namespace exact.common.Extension
 {
      public static class StringExtensions
     {

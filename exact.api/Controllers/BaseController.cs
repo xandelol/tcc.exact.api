@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using exact.api.Exception;
-using lavasim.common.Model.Proxy;
+using exact.common.Model.Proxy;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 

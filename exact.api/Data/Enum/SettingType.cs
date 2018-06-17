@@ -1,4 +1,4 @@
-﻿namespace lavasim.data.Enum
+﻿namespace exact.data.Enum
 {
     public enum SettingType
     {

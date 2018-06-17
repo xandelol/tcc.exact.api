@@ -3,10 +3,10 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using exact.api.Model;
-using lavasim.common.Model;
+using exact.common.Model;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace lavasim.common.Extension
+namespace exact.common.Extension
 {
     public class ModelUserAttribute : ActionFilterAttribute
     {

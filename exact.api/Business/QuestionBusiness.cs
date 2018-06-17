@@ -10,9 +10,9 @@ using exact.api.Model.Payload;
 using exact.api.Model.Proxy;
 using exact.api.Repository;
 using exact.api.Storage;
-using lavasim.common.Model.Payload;
+using exact.common.Model.Payload;
 
-namespace lavasim.business.Business
+namespace exact.business.Business
 {
     public class QuestionBusiness : BaseBusiness<QuestionEntity>
     {

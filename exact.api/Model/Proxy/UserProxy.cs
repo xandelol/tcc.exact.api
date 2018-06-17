@@ -1,10 +1,10 @@
-﻿using lavasim.data.Enum;
+﻿using exact.data.Enum;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using exact.api.Data.Enum;
 
-namespace lavasim.common.Model.Proxy
+namespace exact.common.Model.Proxy
 {
     public class UserProxy
     {

@@ -14,12 +14,12 @@ using exact.api.Model.Proxy;
 using exact.api.Repository;
 using exact.api.Storage;
 using exact.api.Extensions;
-using lavasim.common.Extension;
-using lavasim.common.Model.Proxy;
+using exact.common.Extension;
+using exact.common.Model.Proxy;
 using Microsoft.IdentityModel.Tokens;
 using IConfiguration = Microsoft.Extensions.Configuration.IConfiguration;
 
-namespace lavasim.business.Business
+namespace exact.business.Business
 {
     public class UserBusiness : BaseBusiness<UserEntity>
     {
@@ -57,7 +57,7 @@ namespace lavasim.business.Business
             var user = new UserEntity()
             {
                 Name = payload.Name,
-                Password = payload.Password,
+                Password = payload.Password.CalculateMd5Hash(),
                 Email = payload.Email,
                 Identifier = payload.Identifier,
                 Roles = payload.Roles
@@ -65,7 +65,7 @@ namespace lavasim.business.Business
 
             await _repository.AddAndSaveAsync(user);
             
-            return await GetJwtSecurityToken(user.Email,user.Password,UserType.App);
+            return await GetJwtSecurityToken(user.Email,payload.Password,UserType.App);
         }
 
         public async Task<UserInfoProxy> GetUserInfo(Guid id)

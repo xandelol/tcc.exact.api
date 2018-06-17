@@ -1,4 +1,4 @@
-﻿namespace lavasim.common.Model.Proxy
+﻿namespace exact.common.Model.Proxy
 {
     public class ErrorProxy
     {

@@ -1,4 +1,4 @@
-﻿using lavasim.data.Enum;
+﻿using exact.data.Enum;
 
 namespace exact.api.Data.Model
 {

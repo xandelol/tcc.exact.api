@@ -25,6 +25,84 @@
             <param name="predicate">Function to be ran.</param>
             <returns><paramref name="predicate" /> return or default return in case of an error has been thrown.</returns>
         </member>
+        <member name="T:exact.api.Controllers.QuestionController">
+            <summary>
+                Controller for questions endpoints.
+            </summary>
+        </member>
+        <member name="M:exact.api.Controllers.QuestionController.#ctor(exact.business.Business.QuestionBusiness)">
+            <summary>
+                Constructor
+            </summary>
+            <param name="businesses"></param>
+        </member>
+        <member name="M:exact.api.Controllers.QuestionController.Create(exact.api.Model.Payload.QuestionPayload)">
+            <summary>
+                Gets a number of random questions that the user has not seen before.
+                If the user sees then all, the seen record is reset and all questions can
+                be selected again.
+            </summary>
+            <response code="200">Random questions.</response>
+            <response code="500">
+                We messed up somenthing and we aren't sure what, no system is perfect, check message for more
+                information.
+            </response>
+            <returns></returns>
+        </member>
+        <member name="T:exact.api.Controllers.SettingController">
+            <summary>
+                Controller for settings endpoints.
+            </summary>
+        </member>
+        <member name="M:exact.api.Controllers.SettingController.#ctor(exact.business.Business.SettingBusiness)">
+            <summary>
+                Constructor
+            </summary>
+            <param name="businesses"></param>
+        </member>
+        <member name="T:exact.api.Controllers.UserController">
+            <summary>
+            User Controller's
+            </summary>
+        </member>
+        <member name="M:exact.api.Controllers.UserController.Get(exact.api.Model.UserToken)">
+             <summary>
+             Get user information
+             </summary>
+             <remarks>
+             About "type" property on proxy:
+            
+                 Type
+                 {
+                    App = 0,
+                    Backoffice = 1
+                 }
+            
+             </remarks>
+             <param name="authorization"></param>
+             <returns></returns>
+        </member>
+        <member name="M:exact.api.Controllers.UserController.ResetPassword(System.String)">
+            <summary>
+            Send email to password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:exact.api.Controllers.UserController.ResetPassword(System.String,System.String,System.String)">
+            <summary>
+            Reset password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:exact.api.Controllers.UserController.Reset(System.String,System.String,System.String)">
+            <summary>
+            Change password
+            </summary>
+            <param name="authorization"></param>
+            <param name="oldPassword"></param>
+            <param name="newPassword"></param>
+            <returns></returns>
+        </member>
         <member name="P:exact.api.Data.Model.QuestionEntity.Statement">
             <summary>
                 The question statement
@@ -66,7 +144,7 @@
             When has been changed token (of it was logged in another device)
             </summary>
         </member>
-        <member name="M:lavasim.business.Business.UserBusiness.GetJwtSecurityToken(System.String,System.String,exact.api.Data.Enum.UserType)">
+        <member name="M:exact.business.Business.UserBusiness.GetJwtSecurityToken(System.String,System.String,exact.api.Data.Enum.UserType)">
             <summary>
                 Get a token to the given user
             </summary>
@@ -75,91 +153,13 @@
             <param name="type">Client type</param>
             <returns></returns>
         </member>
-        <member name="T:lavasim.api.Controllers.QuestionController">
-            <summary>
-                Controller for questions endpoints.
-            </summary>
-        </member>
-        <member name="M:lavasim.api.Controllers.QuestionController.#ctor(lavasim.business.Business.QuestionBusiness)">
-            <summary>
-                Constructor
-            </summary>
-            <param name="businesses"></param>
-        </member>
-        <member name="M:lavasim.api.Controllers.QuestionController.Create(exact.api.Model.Payload.QuestionPayload)">
-            <summary>
-                Gets a number of random questions that the user has not seen before.
-                If the user sees then all, the seen record is reset and all questions can
-                be selected again.
-            </summary>
-            <response code="200">Random questions.</response>
-            <response code="500">
-                We messed up somenthing and we aren't sure what, no system is perfect, check message for more
-                information.
-            </response>
-            <returns></returns>
-        </member>
-        <member name="T:lavasim.api.Controllers.SettingController">
-            <summary>
-                Controller for settings endpoints.
-            </summary>
-        </member>
-        <member name="M:lavasim.api.Controllers.SettingController.#ctor(lavasim.business.Business.SettingBusiness)">
-            <summary>
-                Constructor
-            </summary>
-            <param name="businesses"></param>
-        </member>
-        <member name="T:lavasim.api.Controllers.UserController">
-            <summary>
-            User Controller's
-            </summary>
-        </member>
-        <member name="M:lavasim.api.Controllers.UserController.Get(exact.api.Model.UserToken)">
-             <summary>
-             Get user information
-             </summary>
-             <remarks>
-             About "type" property on proxy:
-            
-                 Type
-                 {
-                    App = 0,
-                    Backoffice = 1
-                 }
-            
-             </remarks>
-             <param name="authorization"></param>
-             <returns></returns>
-        </member>
-        <member name="M:lavasim.api.Controllers.UserController.ResetPassword(System.String)">
-            <summary>
-            Send email to password
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:lavasim.api.Controllers.UserController.ResetPassword(System.String,System.String,System.String)">
-            <summary>
-            Reset password
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:lavasim.api.Controllers.UserController.Reset(System.String,System.String,System.String)">
-            <summary>
-            Change password
-            </summary>
-            <param name="authorization"></param>
-            <param name="oldPassword"></param>
-            <param name="newPassword"></param>
-            <returns></returns>
-        </member>
-        <member name="M:lavasim.common.Extension.ModelUserAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+        <member name="M:exact.common.Extension.ModelUserAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
             <summary>
                 Gets user information
             </summary>
             <param name="context">Context</param>
         </member>
-        <member name="M:lavasim.common.Extension.StringExtensions.CalculateMd5Hash(System.String)">
+        <member name="M:exact.common.Extension.StringExtensions.CalculateMd5Hash(System.String)">
             <summary>
             Calculate Md5 hash from a string
             </summary>

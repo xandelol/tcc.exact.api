@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 using exact.api.Controllers;
 using exact.api.Data.Model;
 using exact.api.Model.Proxy;
-using lavasim.common.Extension;
-using lavasim.common.Model.Payload;
+using exact.common.Extension;
+using exact.common.Model.Payload;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using lavasim.business.Business;
+using exact.business.Business;
 
-namespace lavasim.api.Controllers
+namespace exact.api.Controllers
 {
     /// <summary>
     ///     Controller for settings endpoints.

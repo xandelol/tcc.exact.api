@@ -6,11 +6,11 @@ using exact.api.Business;
 using exact.api.Data.Model;
 using exact.api.Model.Proxy;
 using exact.api.Repository;
-using lavasim.common.Extension;
-using lavasim.common.Model.Payload;
-using lavasim.data.Enum;
+using exact.common.Extension;
+using exact.common.Model.Payload;
+using exact.data.Enum;
 
-namespace lavasim.business.Business
+namespace exact.business.Business
 {
     public class SettingBusiness: BaseBusiness<SettingEntity>
     {

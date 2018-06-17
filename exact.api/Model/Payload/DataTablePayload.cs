@@ -1,4 +1,4 @@
-﻿namespace lavasim.common.Model.Payload
+﻿namespace exact.common.Model.Payload
 {
     public class DataTablePayload
     {

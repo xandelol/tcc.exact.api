@@ -5,14 +5,14 @@ using exact.api.Controllers;
 using exact.api.Model;
 using exact.api.Model.Payload;
 using exact.api.Model.Proxy;
-using lavasim.business.Business;
-using lavasim.common.Extension;
-using lavasim.common.Model.Payload;
+using exact.business.Business;
+using exact.common.Extension;
+using exact.common.Model.Payload;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ActionConstraints;
 
-namespace lavasim.api.Controllers
+namespace exact.api.Controllers
 {
     /// <summary>
     ///     Controller for questions endpoints.
