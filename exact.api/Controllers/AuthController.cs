@@ -1,5 +1,6 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Threading.Tasks;
+using exact.api.Data.Enum;
 using exact.api.Model.Payload;
 using exact.api.Model.Proxy;
 using exact.business.Business;
@@ -26,11 +27,20 @@ namespace exact.api.Controllers
         /// <returns><see cref="JwtTokenProxy" /> information</returns>
         [HttpPost("login")]
         [AllowAnonymous]
-        public Task<IActionResult> Login([FromBody] AuthPayload user)
+        public Task<IActionResult> Login([FromQuery] string user, [FromQuery] string password, [FromQuery] int type)
         {
+            UserType userType;
+            if(type == 1)
+            {
+                userType = UserType.Backoffice;
+            }
+            else
+            {
+                userType = UserType.App;
+            }
             return RunDefaultAsync(async () =>
             {
-                var token = await _business.GetJwtSecurityToken(user.Username, user.Password, user.Type);
+                var token = await _business.GetJwtSecurityToken(user, password, userType);
 
                 return Ok(new JwtTokenProxy
                 {

@@ -4,7 +4,7 @@
         <name>exact.api</name>
     </assembly>
     <members>
-        <member name="M:exact.api.Controllers.AuthController.Login(exact.api.Model.Payload.AuthPayload)">
+        <member name="M:exact.api.Controllers.AuthController.Login(System.String,System.String,System.Int32)">
             <summary>
             Login into system and return a jwt token
             </summary>
