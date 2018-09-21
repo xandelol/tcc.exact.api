@@ -27,7 +27,7 @@ namespace exact.api.Controllers
         /// <returns><see cref="JwtTokenProxy" /> information</returns>
         [HttpPost("login")]
         [AllowAnonymous]
-        public Task<IActionResult> Login([FromQuery] string user, [FromQuery] string password, [FromQuery] int type)
+        public Task<IActionResult> Login([FromForm] string user, [FromForm] string password, [FromForm] int type)
         {
             UserType userType;
             if(type == 1)
