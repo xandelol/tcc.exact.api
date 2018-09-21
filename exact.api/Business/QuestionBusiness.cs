@@ -122,7 +122,7 @@ namespace exact.business.Business
                 Id = s.Id,
                 Statement = s.Statement,
                 IsActive = s.IsActive
-            }).ToList();
+            }).Where(f => f.IsActive == true).ToList();
         }
     }
 }
