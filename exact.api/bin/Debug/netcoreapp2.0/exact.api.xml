@@ -4,9 +4,21 @@
         <name>exact.api</name>
     </assembly>
     <members>
-        <member name="M:exact.api.Controllers.AuthController.Login(System.String,System.String,System.Int32)">
+        <member name="T:exact.api.Controllers.AuthController">
+            <summary>
+             Auth Controller
+            </summary>
+        </member>
+        <member name="M:exact.api.Controllers.AuthController.Login(exact.api.Model.Payload.AuthPayload)">
             <summary>
             Login into system and return a jwt token
+            </summary>
+            <param name="user">User to be logged in</param>
+            <returns><see cref="T:exact.api.Model.Proxy.JwtTokenProxy" /> information</returns>
+        </member>
+        <member name="M:exact.api.Controllers.AuthController.GameLogin(exact.api.Model.Payload.AuthPayload)">
+            <summary>
+            Login into game and return a jwt token
             </summary>
             <param name="user">User to be logged in</param>
             <returns><see cref="T:exact.api.Model.Proxy.JwtTokenProxy" /> information</returns>
@@ -142,6 +154,26 @@
             <summary>
             When token was expired
             When has been changed token (of it was logged in another device)
+            </summary>
+        </member>
+        <member name="T:exact.api.Model.Payload.AuthPayload">
+            <summary>
+             <see cref="!:User"/> login information
+            </summary>
+        </member>
+        <member name="P:exact.api.Model.Payload.AuthPayload.Username">
+            <summary>
+                <see cref="!:User.Username"/>
+            </summary>
+        </member>
+        <member name="P:exact.api.Model.Payload.AuthPayload.Password">
+            <summary>
+                <see cref="!:User.Password"/>
+            </summary>
+        </member>
+        <member name="P:exact.api.Model.Payload.AuthPayload.Type">
+            <summary>
+                <see cref="!:User.Type"/>
             </summary>
         </member>
         <member name="M:exact.business.Business.UserBusiness.GetJwtSecurityToken(System.String,System.String,exact.api.Data.Enum.UserType)">

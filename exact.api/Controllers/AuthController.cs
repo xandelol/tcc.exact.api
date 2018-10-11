@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace exact.api.Controllers
 {
+    /// <summary>
+    ///  Auth Controller
+    /// </summary>
     [Route("api/auth")]
     [AllowAnonymous]
     public class AuthController : BaseController
@@ -19,28 +22,46 @@ namespace exact.api.Controllers
         {
             _business = business;
         }
-    
+
         /// <summary>
         /// Login into system and return a jwt token
         /// </summary>
         /// <param name="user">User to be logged in</param>
         /// <returns><see cref="JwtTokenProxy" /> information</returns>
+        [ProducesResponseType(typeof(JwtTokenProxy), 200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(500)]
         [HttpPost("login")]
         [AllowAnonymous]
-        public Task<IActionResult> Login([FromForm] string user, [FromForm] string password, [FromForm] int type)
+        public Task<IActionResult> Login([FromBody] AuthPayload user)
         {
-            UserType userType;
-            if(type == 1)
-            {
-                userType = UserType.Backoffice;
-            }
-            else
-            {
-                userType = UserType.App;
-            }
             return RunDefaultAsync(async () =>
             {
-                var token = await _business.GetJwtSecurityToken(user, password, userType);
+                var token = await _business.GetJwtSecurityToken(user.Username, user.Password, user.Type);
+
+                return Ok(new JwtTokenProxy
+                {
+                    Token = $"Bearer {new JwtSecurityTokenHandler().WriteToken(token)}",
+                    Expiration = token.ValidTo
+                });
+            });
+        }
+        
+        /// <summary>
+        /// Login into game and return a jwt token
+        /// </summary>
+        /// <param name="user">User to be logged in</param>
+        /// <returns><see cref="JwtTokenProxy" /> information</returns>
+        [ProducesResponseType(typeof(JwtTokenProxy), 200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(500)]
+        [HttpPost("game/login")]
+        [AllowAnonymous]
+        public Task<IActionResult> GameLogin([FromForm] AuthPayload user)
+        {
+            return RunDefaultAsync(async () =>
+            {
+                var token = await _business.GetJwtSecurityToken(user.Username, user.Password, user.Type);
 
                 return Ok(new JwtTokenProxy
                 {

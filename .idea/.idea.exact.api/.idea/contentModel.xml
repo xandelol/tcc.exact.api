@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\guilherme\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_exact.api.1884147731.00" t="ExcludeRecursive" />
-    <e p="C:\Users\guilherme\RiderProjects\exact.api" t="IncludeFlat">
+    <e p="C:\git_xandao\tcc.exact.api" t="IncludeFlat">
       <e p="exact.api" t="IncludeRecursive">
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Business" t="Include">
           <e p="BaseBusiness.cs" t="Include" />
           <e p="GroupActionBusiness.cs" t="Include" />
+          <e p="QuestionBusiness.cs" t="Include" />
           <e p="SettingBusiness.cs" t="Include" />
           <e p="UserBusiness.cs" t="Include" />
         </e>
         <e p="Controllers" t="Include">
           <e p="AuthController.cs" t="Include" />
           <e p="BaseController.cs" t="Include" />
+          <e p="QuestionsController.cs" t="Include" />
           <e p="SettingController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
         </e>
@@ -39,6 +40,9 @@
           <e p="InvalidArgumentException.cs" t="Include" />
           <e p="TokenInvalidException.cs" t="Include" />
         </e>
+        <e p="Extensions" t="Include">
+          <e p="Validadors.cs" t="Include" />
+        </e>
         <e p="Migrations" t="Include">
           <e p="20180609193600_InitialMigration.cs" t="Include" />
           <e p="20180609193600_InitialMigration.Designer.cs" t="Include" />
@@ -46,6 +50,14 @@
           <e p="20180609200310_0.0.2.Designer.cs" t="Include" />
           <e p="20180609200500_0.0.3.cs" t="Include" />
           <e p="20180609200500_0.0.3.Designer.cs" t="Include" />
+          <e p="20180615225736_0.0.4.cs" t="Include" />
+          <e p="20180615225736_0.0.4.Designer.cs" t="Include" />
+          <e p="20180616035459_0.0.5.cs" t="Include" />
+          <e p="20180616035459_0.0.5.Designer.cs" t="Include" />
+          <e p="20180616040342_0.0.6.cs" t="Include" />
+          <e p="20180616040342_0.0.6.Designer.cs" t="Include" />
+          <e p="20180616041433_0.0.7.cs" t="Include" />
+          <e p="20180616041433_0.0.7.Designer.cs" t="Include" />
           <e p="ExactContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="migrations.txt" t="Include" />
@@ -53,13 +65,18 @@
           <e p="GenericAtribute.cs" t="Include" />
           <e p="Payload" t="Include">
             <e p="AuthPayload.cs" t="Include" />
+            <e p="BasePayload.cs" t="Include" />
+            <e p="CreateUserPayload.cs" t="Include" />
             <e p="DataTablePayload.cs" t="Include" />
+            <e p="QuestionPayload.cs" t="Include" />
           </e>
           <e p="Proxy" t="Include">
             <e p="ActionProxy.cs" t="Include" />
+            <e p="BaseProxy.cs" t="Include" />
             <e p="DataTableProxy.cs" t="Include" />
             <e p="ErrorProxy.cs" t="Include" />
             <e p="JwtTokenProxy.cs" t="Include" />
+            <e p="QuestionProxy.cs" t="Include" />
             <e p="SettingProxy.cs" t="Include" />
             <e p="UserInfoProxy.cs" t="Include" />
             <e p="UserProxy.cs" t="Include" />
@@ -74,12 +91,17 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
         <e p="Repository" t="Include">
           <e p="BaseRepository.cs" t="Include" />
           <e p="GroupActionRepository.cs" t="Include" />
           <e p="GroupRepository.cs" t="Include" />
           <e p="IDataRepository.cs" t="Include" />
-          <e p="QuestionRespository.cs" t="Include" />
+          <e p="Interfaces" t="Include" />
+          <e p="IUserRepository.cs" t="Include" />
+          <e p="QuestionRepository.cs" t="Include" />
           <e p="SettingRepository.cs" t="Include" />
           <e p="UserRepository.cs" t="Include" />
         </e>
@@ -97,5 +119,7 @@
       <e p="exact.api.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
+    <e p="C:\Users\aacds\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\aacds\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_exact.api.-2101103753.00" t="ExcludeRecursive" />
   </component>
 </project>
