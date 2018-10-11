@@ -65,7 +65,7 @@ namespace exact.business.Business
 
             await _repository.AddAndSaveAsync(user);
             
-            return await GetJwtSecurityToken(user.Email,payload.Password,UserType.App);
+            return await GetJwtSecurityToken(user.Email,payload.Password);
         }
 
         public async Task<UserInfoProxy> GetUserInfo(Guid id)
@@ -122,7 +122,7 @@ namespace exact.business.Business
 
             await _repository.UpdateAndSaveAsync(user);
 
-            return await GetJwtSecurityToken(email, password, user.Type);
+            return await GetJwtSecurityToken(email, password);
         }
 
         /// <summary>
@@ -133,9 +133,9 @@ namespace exact.business.Business
         /// <param name="type">Client type</param>
         /// <returns></returns>
         public async Task<JwtSecurityToken> GetJwtSecurityToken(string username,
-            string password, UserType type)
+            string password)
         {
-            var user = _repository.Where(w => w.Email == username && w.Type == type).FirstOrDefault();
+            var user = _repository.Where(w => w.Email == username).FirstOrDefault();
 
             if (user == null)
                 throw new InvalidArgumentException("Usuário não encontrado!");

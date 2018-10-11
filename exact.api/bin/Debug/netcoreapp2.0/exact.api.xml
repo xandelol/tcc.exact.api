@@ -181,7 +181,7 @@
                 <see cref="!:User.Type"/>
             </summary>
         </member>
-        <member name="M:exact.business.Business.UserBusiness.GetJwtSecurityToken(System.String,System.String,exact.api.Data.Enum.UserType)">
+        <member name="M:exact.business.Business.UserBusiness.GetJwtSecurityToken(System.String,System.String)">
             <summary>
                 Get a token to the given user
             </summary>

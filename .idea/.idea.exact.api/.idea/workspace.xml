@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad9d893b-ca06-46be-90cf-1cf9ec714d7e" name="Default" comment="" />
+    <list default="true" id="ad9d893b-ca06-46be-90cf-1cf9ec714d7e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/exact.api/Business/UserBusiness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/exact.api/Business/UserBusiness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exact.api/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/exact.api/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exact.api/bin/Debug/netcoreapp2.0/exact.api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/exact.api/bin/Debug/netcoreapp2.0/exact.api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exact.api/bin/Debug/netcoreapp2.0/exact.api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/exact.api/bin/Debug/netcoreapp2.0/exact.api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exact.api/bin/Debug/netcoreapp2.0/exact.api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/exact.api/bin/Debug/netcoreapp2.0/exact.api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exact.api/obj/Debug/netcoreapp2.0/exact.api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/exact.api/obj/Debug/netcoreapp2.0/exact.api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exact.api/obj/Debug/netcoreapp2.0/exact.api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/exact.api/obj/Debug/netcoreapp2.0/exact.api.pdb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +28,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="22" />
+          <entry key="cs" value="23" />
           <entry key="json" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="22" />
+          <entry key="C#" value="23" />
           <entry key="JSON" value="4" />
         </counts>
       </usages-collector>
@@ -47,22 +55,50 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exact.api/Controllers/AuthController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+            <state relative-caret-position="641">
+              <caret line="63" column="92" selection-start-line="63" selection-start-column="92" selection-end-line="63" selection-end-column="92" />
               <folding>
-                <marker date="1539266057033" expanded="false" signature="6:260" ph="..." />
-                <marker date="1539266057033" expanded="true" signature="293:2451" ph="{...}" />
-                <marker date="1539266057033" expanded="true" signature="300:357" ph="///  Auth Controller ... " />
-                <marker date="1539266057033" expanded="true" signature="451:2449" ph="{...}" />
-                <marker date="1539266057033" expanded="true" signature="560:614" ph="{...}" />
-                <marker date="1539266057033" expanded="true" signature="624:845" ph="/// Login into system and return a jwt token ... " />
-                <marker date="1539266057033" expanded="true" signature="1099:1521" ph="{...}" />
-                <marker date="1539266057033" expanded="true" signature="1156:1509" ph="{...}" />
-                <marker date="1539266057033" expanded="true" signature="1338:1493" ph="{...}" />
-                <marker date="1539266057033" expanded="true" signature="1539:1758" ph="/// Login into game and return a jwt token ... " />
-                <marker date="1539266057033" expanded="true" signature="2021:2443" ph="{...}" />
-                <marker date="1539266057033" expanded="true" signature="2078:2431" ph="{...}" />
-                <marker date="1539266057033" expanded="true" signature="2260:2415" ph="{...}" />
+                <marker date="1539281645919" expanded="false" signature="6:260" ph="..." />
+                <marker date="1539281645919" expanded="true" signature="293:2429" ph="{...}" />
+                <marker date="1539281645919" expanded="true" signature="300:357" ph="///  Auth Controller ... " />
+                <marker date="1539281645919" expanded="true" signature="451:2427" ph="{...}" />
+                <marker date="1539281645919" expanded="true" signature="560:614" ph="{...}" />
+                <marker date="1539281645919" expanded="true" signature="624:845" ph="/// Login into system and return a jwt token ... " />
+                <marker date="1539281645919" expanded="true" signature="1099:1510" ph="{...}" />
+                <marker date="1539281645919" expanded="true" signature="1156:1498" ph="{...}" />
+                <marker date="1539281645919" expanded="true" signature="1327:1482" ph="{...}" />
+                <marker date="1539281645919" expanded="true" signature="1528:1747" ph="/// Login into game and return a jwt token ... " />
+                <marker date="1539281645919" expanded="true" signature="2010:2421" ph="{...}" />
+                <marker date="1539281645919" expanded="true" signature="2067:2409" ph="{...}" />
+                <marker date="1539281645919" expanded="true" signature="2238:2393" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exact.api/Business/UserBusiness.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="67" column="72" selection-start-line="67" selection-start-column="72" selection-end-line="67" selection-end-column="72" />
+              <folding>
+                <marker date="1539281634194" expanded="false" signature="6:607" ph="..." />
+                <marker date="1539281634194" expanded="true" signature="642:6653" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="701:6651" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="1564:1922" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="2014:2568" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="2173:2415" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="2631:3156" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="2955:3115" ph="/* if (user.Type == UserType.Backoffice) ... */" />
+                <marker date="1539281634194" expanded="true" signature="3205:3371" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="3435:3710" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="3813:4294" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="3928:4064" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="4304:4573" ph="///     Get a token to the given user ... " />
+                <marker date="1539281634194" expanded="true" signature="4683:5819" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="5894:6135" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="6239:6645" ph="{...}" />
+                <marker date="1539281634194" expanded="true" signature="6369:6517" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -95,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/exact.api/Business/QuestionBusiness.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
-              <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
+              <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
               <folding>
                 <marker date="1539279095909" expanded="false" signature="6:342" ph="..." />
                 <marker date="1539279095909" expanded="true" signature="377:4429" ph="{...}" />
@@ -337,12 +373,12 @@
         <option value="$PROJECT_DIR$/exact.api/Data/ExactContext.cs" />
         <option value="$PROJECT_DIR$/exact.api/Data/Model/UserEntity.cs" />
         <option value="$PROJECT_DIR$/exact.api/Model/Payload/AuthPayload.cs" />
-        <option value="$PROJECT_DIR$/exact.api/Business/UserBusiness.cs" />
-        <option value="$PROJECT_DIR$/exact.api/Controllers/AuthController.cs" />
         <option value="$PROJECT_DIR$/exact.api/Model/Payload/QuestionPayload.cs" />
         <option value="$PROJECT_DIR$/exact.api/Data/Model/QuestionEntity.cs" />
         <option value="$PROJECT_DIR$/exact.api/Model/Proxy/QuestionProxy.cs" />
         <option value="$PROJECT_DIR$/exact.api/Business/QuestionBusiness.cs" />
+        <option value="$PROJECT_DIR$/exact.api/Business/UserBusiness.cs" />
+        <option value="$PROJECT_DIR$/exact.api/Controllers/AuthController.cs" />
       </list>
     </option>
   </component>
@@ -533,12 +569,12 @@
       <updated>1528568536852</updated>
       <workItem from="1528568539174" duration="6154000" />
       <workItem from="1538684409563" duration="106000" />
-      <workItem from="1539260419310" duration="11582000" />
+      <workItem from="1539260419310" duration="11980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17842000" />
+    <option name="totallyTimeSpent" value="18240000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -553,7 +589,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1663113" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1663113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -575,7 +611,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
@@ -595,32 +631,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/exact.api/Controllers/AuthController.cs</url>
-          <line>39</line>
-          <properties documentPath="$PROJECT_DIR$/exact.api/Controllers/AuthController.cs" initialLine="39">
-            <startOffsets>
-              <option value="1187" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1276" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/exact.api/Controllers/AuthController.cs</url>
-          <line>63</line>
-          <properties documentPath="$PROJECT_DIR$/exact.api/Controllers/AuthController.cs" initialLine="63">
-            <startOffsets>
-              <option value="2109" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2198" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -984,32 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exact.api/Business/UserBusiness.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1169">
-          <caret line="153" column="59" selection-start-line="153" selection-start-column="59" selection-end-line="153" selection-end-column="59" />
-          <folding>
-            <marker date="1529448418929" expanded="false" signature="6:607" ph="..." />
-            <marker date="1529448418929" expanded="true" signature="642:6710" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="701:6708" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="1564:1922" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="2014:2581" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="2173:2415" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="2644:3169" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="2968:3128" ph="/* if (user.Type == UserType.Backoffice) ... */" />
-            <marker date="1529448418929" expanded="true" signature="3218:3384" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="3448:3723" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="3826:4318" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="3941:4077" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="4328:4597" ph="///     Get a token to the given user ... " />
-            <marker date="1529448418929" expanded="true" signature="4722:5876" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="5951:6192" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="6296:6702" ph="{...}" />
-            <marker date="1529448418929" expanded="true" signature="6426:6574" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exact.api/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1148,7 +1132,7 @@
     <entry file="file://$PROJECT_DIR$/exact.api/Business/QuestionBusiness.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
-          <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
+          <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
           <folding>
             <marker date="1539279095909" expanded="false" signature="6:342" ph="..." />
             <marker date="1539279095909" expanded="true" signature="377:4429" ph="{...}" />
@@ -1171,24 +1155,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/exact.api/Business/UserBusiness.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="67" column="72" selection-start-line="67" selection-start-column="72" selection-end-line="67" selection-end-column="72" />
+          <folding>
+            <marker date="1539281634194" expanded="false" signature="6:607" ph="..." />
+            <marker date="1539281634194" expanded="true" signature="642:6653" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="701:6651" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="1564:1922" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="2014:2568" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="2173:2415" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="2631:3156" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="2955:3115" ph="/* if (user.Type == UserType.Backoffice) ... */" />
+            <marker date="1539281634194" expanded="true" signature="3205:3371" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="3435:3710" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="3813:4294" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="3928:4064" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="4304:4573" ph="///     Get a token to the given user ... " />
+            <marker date="1539281634194" expanded="true" signature="4683:5819" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="5894:6135" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="6239:6645" ph="{...}" />
+            <marker date="1539281634194" expanded="true" signature="6369:6517" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/exact.api/Controllers/AuthController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        <state relative-caret-position="641">
+          <caret line="63" column="92" selection-start-line="63" selection-start-column="92" selection-end-line="63" selection-end-column="92" />
           <folding>
-            <marker date="1539266057033" expanded="false" signature="6:260" ph="..." />
-            <marker date="1539266057033" expanded="true" signature="293:2451" ph="{...}" />
-            <marker date="1539266057033" expanded="true" signature="300:357" ph="///  Auth Controller ... " />
-            <marker date="1539266057033" expanded="true" signature="451:2449" ph="{...}" />
-            <marker date="1539266057033" expanded="true" signature="560:614" ph="{...}" />
-            <marker date="1539266057033" expanded="true" signature="624:845" ph="/// Login into system and return a jwt token ... " />
-            <marker date="1539266057033" expanded="true" signature="1099:1521" ph="{...}" />
-            <marker date="1539266057033" expanded="true" signature="1156:1509" ph="{...}" />
-            <marker date="1539266057033" expanded="true" signature="1338:1493" ph="{...}" />
-            <marker date="1539266057033" expanded="true" signature="1539:1758" ph="/// Login into game and return a jwt token ... " />
-            <marker date="1539266057033" expanded="true" signature="2021:2443" ph="{...}" />
-            <marker date="1539266057033" expanded="true" signature="2078:2431" ph="{...}" />
-            <marker date="1539266057033" expanded="true" signature="2260:2415" ph="{...}" />
+            <marker date="1539281645919" expanded="false" signature="6:260" ph="..." />
+            <marker date="1539281645919" expanded="true" signature="293:2429" ph="{...}" />
+            <marker date="1539281645919" expanded="true" signature="300:357" ph="///  Auth Controller ... " />
+            <marker date="1539281645919" expanded="true" signature="451:2427" ph="{...}" />
+            <marker date="1539281645919" expanded="true" signature="560:614" ph="{...}" />
+            <marker date="1539281645919" expanded="true" signature="624:845" ph="/// Login into system and return a jwt token ... " />
+            <marker date="1539281645919" expanded="true" signature="1099:1510" ph="{...}" />
+            <marker date="1539281645919" expanded="true" signature="1156:1498" ph="{...}" />
+            <marker date="1539281645919" expanded="true" signature="1327:1482" ph="{...}" />
+            <marker date="1539281645919" expanded="true" signature="1528:1747" ph="/// Login into game and return a jwt token ... " />
+            <marker date="1539281645919" expanded="true" signature="2010:2421" ph="{...}" />
+            <marker date="1539281645919" expanded="true" signature="2067:2409" ph="{...}" />
+            <marker date="1539281645919" expanded="true" signature="2238:2393" ph="{...}" />
           </folding>
         </state>
       </provider>

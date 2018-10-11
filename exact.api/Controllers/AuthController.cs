@@ -37,7 +37,7 @@ namespace exact.api.Controllers
         {
             return RunDefaultAsync(async () =>
             {
-                var token = await _business.GetJwtSecurityToken(user.Username, user.Password, user.Type);
+                var token = await _business.GetJwtSecurityToken(user.Username, user.Password);
 
                 return Ok(new JwtTokenProxy
                 {
@@ -61,7 +61,7 @@ namespace exact.api.Controllers
         {
             return RunDefaultAsync(async () =>
             {
-                var token = await _business.GetJwtSecurityToken(user.Username, user.Password, user.Type);
+                var token = await _business.GetJwtSecurityToken(user.Username, user.Password);
 
                 return Ok(new JwtTokenProxy
                 {
