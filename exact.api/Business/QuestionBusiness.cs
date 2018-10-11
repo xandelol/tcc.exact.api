@@ -35,7 +35,8 @@ namespace exact.business.Business
             var question = new QuestionEntity()
             {
                 Id = Guid.NewGuid(),
-                Statement = payload.Statement
+                Statement = payload.Statement,
+                Answer = payload.Answer
             };
 
             await _questionRepository.AddAndSaveAsync(question);
@@ -46,6 +47,7 @@ namespace exact.business.Business
             var questionEntity = await _questionRepository.FirstOrDefaultAsync(f => f.Id == payload.Id);
 
             questionEntity.Statement = payload.Statement;
+            questionEntity.Answer = payload.Answer;
             questionEntity.IsActive = payload.IsActive;
 
           
@@ -64,7 +66,8 @@ namespace exact.business.Business
             {
                 Id = questionEntity.Id,
                 Statement = questionEntity.Statement,
-                IsActive = questionEntity.IsActive,
+                Answer = questionEntity.Answer,
+                IsActive = questionEntity.IsActive
             };
         }
 
@@ -103,6 +106,7 @@ namespace exact.business.Business
             {
                 Id = s.Id,
                 Statement = s.Statement,
+                Answer = s.Answer,
                 IsActive = s.IsActive
             }).ToList();
 
@@ -121,6 +125,7 @@ namespace exact.business.Business
             return list.Select(s => new QuestionProxy() {
                 Id = s.Id,
                 Statement = s.Statement,
+                Answer = s.Answer,
                 IsActive = s.IsActive
             }).Where(f => f.IsActive == true).ToList();
         }

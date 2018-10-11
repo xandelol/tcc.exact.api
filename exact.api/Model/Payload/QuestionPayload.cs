@@ -8,5 +8,7 @@ namespace exact.api.Model.Payload
     public class QuestionPayload : BasePayload
     {
         public string Statement { get; set; }
+
+        public int Answer { get; set; }
     }
 }

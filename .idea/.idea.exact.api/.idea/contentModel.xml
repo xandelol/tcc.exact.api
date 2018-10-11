@@ -58,6 +58,8 @@
           <e p="20180616040342_0.0.6.Designer.cs" t="Include" />
           <e p="20180616041433_0.0.7.cs" t="Include" />
           <e p="20180616041433_0.0.7.Designer.cs" t="Include" />
+          <e p="20181011173327_0.0.8.cs" t="Include" />
+          <e p="20181011173327_0.0.8.Designer.cs" t="Include" />
           <e p="ExactContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="migrations.txt" t="Include" />

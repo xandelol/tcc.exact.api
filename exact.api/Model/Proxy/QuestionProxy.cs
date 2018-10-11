@@ -8,5 +8,6 @@ namespace exact.api.Model.Proxy
     public class QuestionProxy : BaseProxy
     {
         public string Statement { get; set; }
+        public int Answer { get; set; }
     }
 }

@@ -120,6 +120,11 @@
                 The question statement
             </summary>
         </member>
+        <member name="P:exact.api.Data.Model.QuestionEntity.Answer">
+            <summary>
+             The question's answer
+            </summary>
+        </member>
         <member name="P:exact.api.Data.Model.SettingEntity.ClientUses">
             <summary>
             Indicates that if the configuration will go down to the applications,
