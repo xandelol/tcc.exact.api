@@ -81,8 +81,8 @@ namespace exact.api.Controllers
         [ProducesResponseType(typeof(List<QuestionProxy>),200)]
         [AllowAnonymous]
         [HttpGet("game/list")]
-        public IActionResult List() {
-            return RunDefault(() => Ok(_businesses.Get()));
+        public Task<IActionResult> List() {
+            return RunDefaultAsync(async () => Ok(await _businesses.Get()));
         }
     }
 }

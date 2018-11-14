@@ -120,14 +120,16 @@ namespace exact.business.Business
             };
         }
 
+        
         public async Task<List<QuestionProxy>> Get() {
-            var list = _questionRepository.GetAll();
-            return list.Select(s => new QuestionProxy() {
-                Id = s.Id,
-                Statement = s.Statement,
-                Answer = s.Answer,
-                IsActive = s.IsActive
-            }).Where(f => f.IsActive == true).ToList();
+            var list = _questionRepository.GetAll().ToList();
+            return new QuestionProxy().EntityToProxyList(list);
+//            return list.Select(s => new QuestionProxy() {
+//                Id = s.Id,
+//                Statement = s.Statement,
+//                Answer = s.Answer,
+//                IsActive = s.IsActive
+//            }).Where(f => f.IsActive == true).ToList();
         }
     }
 }
