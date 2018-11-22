@@ -57,7 +57,7 @@ namespace exact.api.Controllers
         [ProducesResponseType(500)]
         [HttpPost("game/login")]
         [AllowAnonymous]
-        public Task<IActionResult> GameLogin([FromForm] AuthPayload user)
+        public Task<IActionResult> GameLogin([FromQuery] AuthPayload user)
         {
             return RunDefaultAsync(async () =>
             {
